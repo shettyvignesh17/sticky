@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #app {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .button-container {
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #f9a825;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f57f17;
+  }
+  
+  #stickyNotesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .sticky-note {
+    width: 200px;
+    height: 200px;
+    background-color: #ffeb3b;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sticky-note textarea {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    resize: none;
+    outline: none;
+  }
+  
+  .sticky-note .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #d32f2f;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .sticky-note .delete-btn:hover {
+    color: #c2185b;
+  }
+  
